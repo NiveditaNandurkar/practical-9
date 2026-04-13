@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Frames Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .frame-container {
+            display: flex;
+            height: 100vh;
+        }
+        .left-frame {
+            width: 50%;
+            border-right: 2px solid #ccc;
+        }
+        .right-frame {
+            width: 50%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Embedding Maps and External Pages</h2>
+    <div class="frame-container">
+        <!-- Left frame: Google Maps -->
+        <div class="left-frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160985779!2d72.741099!3d19.082197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63a6f2a0e3b%3A0xdeb8f5c0f0f0f0f0!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Right frame: External webpage -->
+        <div class="right-frame">
+            <iframe src="https://www.wikipedia.org/"></iframe>
+        </div>
+    </div>
+</body>
+</html>
